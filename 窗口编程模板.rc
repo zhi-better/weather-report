@@ -1,0 +1,185 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_form1 DIALOGEX 0, 0, 431, 193
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "天气预报"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "选择城市",ID_lblSelectCity,378,174,48,12
+    LTEXT           "关于. . .",ID_lblAbout,6,168,36,12
+    CONTROL         "",ID_picMain,"Static",SS_OWNERDRAW,6,6,408,132
+END
+
+ID_frmChooseCity DIALOGEX 0, 0, 257, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找城市"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        ID_txtCity,120,18,126,18,ES_AUTOHSCROLL
+    LTEXT           "区域名称：\r\n(可以是省、市，直辖市)",IDC_STATIC,6,18,108,18
+    PUSHBUTTON      "确定",ID_cmdOK,186,72,54,18
+    LTEXT           "城市名称：\r\n(上面输入框下一级城市)",IDC_STATIC,6,42,108,18
+    COMBOBOX        ID_cboCityAvli,120,42,126,18,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询",ID_cmdGetAvliCity,126,72,48,18
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    ID_form1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    ID_frmChooseCity, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+ID_form1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_frmChooseCity AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "main.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TXT
+//
+
+IDR_TxtCityCode         TXT                     "全国城市代码.txt"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_CloudDay            PNG                     "多云-白天.png"
+
+IDB_CloudNight          PNG                     "多云-晚上.png"
+
+IDB_CloudRain           PNG                     "多云转小雨.png"
+
+IDB_SunUp               PNG                     "日出.png"
+
+IDB_Sunrise             PNG                     "日落.png"
+
+IDB_Sun                 PNG                     "太阳.png"
+
+IDB_SmallSnow           PNG                     "小雪.png"
+
+IDB_MoreCloud           PNG                     "阴.png"
+
+IDB_Moon                PNG                     "月亮.png"
+
+IDB_MidRain             PNG                     "中雨.png"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// JPG
+//
+
+IDR_BG                  JPG                     "背景.jpg"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
